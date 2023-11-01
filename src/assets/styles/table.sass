@@ -16,8 +16,6 @@ $delivered: #BEE3C2// доставлен
 $cancelled: #FFC6C6// отменен
 $refund: #A6A6AB //Возврат
 
-.all-table
-  padding-top: 50px
 
 .table
   width: 100%
@@ -155,10 +153,16 @@ $refund: #A6A6AB //Возврат
     gap: 5px
     align-items: baseline
     justify-items: start
+  &__btn-form 
+    display: none
+    position: relative
+  &__btn-form.active
+    display: block
 
 .tooltip
   position: relative
   cursor: pointer
+  margin-bottom: 0
   & span
     visibility: hidden
     width: fit-content

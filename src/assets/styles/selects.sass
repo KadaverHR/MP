@@ -1,0 +1,101 @@
+.choices
+  position: absolute
+  z-index: 9999
+  display: flex
+  font-size: 0.769rem
+  line-height: 0.846rem
+  min-width: 104px
+  &__input
+    display: flex
+    max-width: 84px
+  &__inner
+    display: flex
+    height: min-content
+    width: max-content
+    position: relative
+    padding-right: 20px
+    &::after
+      content: ""
+      background: url(/assets/img/arr.svg)
+      position: absolute
+      width: 10px
+      height: 5px
+      background-repeat: no-repeat
+      right: 5px
+      top: 50%
+      transform: translateY(-50%)
+  &__list--dropdown, &__list[aria-expanded]
+    width: max-content
+    min-width: 114px
+  &__list--dropdown .choices__item--selectable::after, .choices__list[aria-expanded] .choices__item--selectable::after
+    display: none
+  &__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item
+    font-size: 0.769rem
+    line-height: 0.846rem
+  &__list--multiple
+    display: grid
+    justify-items: start
+  &__list--multiple .choices__item
+    background: #565C6B
+    border: 0
+    display: grid
+    grid-auto-flow: column
+    justify-items: start
+    align-items: baseline
+    font-size: 0.769rem
+    line-height: 0.846rem
+    margin-right: 0
+    padding: 5px
+    &:active
+      background: #565C6B
+  &[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button
+    background-repeat: no-repeat
+    border-left: 0
+  &__list
+    display: grid
+    justify-items: start
+    align-items: center
+  &__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable
+    padding: 5px 20px 5px 5px
+    min-width: 114px
+    width: fit-content
+    align-self: start
+    text-align: start
+
+.search
+  position: relative
+  border-radius: 5px
+  border: 1px solid #aab2c2
+  padding: 2px 2px 2px 2px
+  background-color: #fff
+  display: grid
+  grid-auto-flow: column
+  justify-content: start
+  grid-template-columns: auto 1fr
+  &__select
+    outline: 0
+    border: 0
+    background: #F0F3F8
+    padding-left: 10px
+
+    width: 100%
+    border-radius: 5px
+    padding: 0.25em 0.5em
+    cursor: pointer
+  input
+    outline: 0
+    border: 0
+    padding-left: 10px
+  &__button
+    outline: 0
+    border: 0
+    padding: 2px 10px
+    background: #F0F3F8
+
+.search-area
+  padding-top: 10px
+  padding-bottom: 15px
+  display: flex
+  justify-content: end
+  width: 100%
+

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/main.min.css">
+  <script defer src="assets/libs/choices.min.js"></script>
   <script defer src="assets/js/app.js"></script>
 </head>
 
@@ -20,15 +21,47 @@
   </header>
 
   <main>
+    <section class="filter">
+      <div class="container">
+          <div id="search" class="search-area">
+            <form class="search">
+              <select class="search__select select-type" style="width: 100%">
+                <option value="1">№ Заказа МП</option>
+                <option value="2">По фамилии</option>
+                <option value="3">По адресу/option>
+                <option value="4">№ внутр.</option>
+                <option value="5">Сумм заказа</option>
+                <option value="6">Артикул</option>
+              </select>
+              <input type="text" class="search__input" value="" placeholder="Поиск">
+              <button class="button search__button" type="submit">
+                <img src="assets/img/search.svg" alt="Найти">
+              </button>
+            </form>
+          </div>
+      </div>
+    </section>
     <section class="all-table">
       <div class="container">
         <table class="table">
           <thead>
             <tr>
               <th>
-                <button class="table__header-btn">
+                <button id="selectMP" class="table__header-btn">
                   <img src="assets/img/fltr.svg">МП
                 </button>
+                <form id="selectMPform" class="table__btn-form" action="">
+                  <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button"
+                    placeholder="Выбери меня" multiple>
+
+                    <option value="ОМ">ОМ</option>
+                    <option value="ОК">ОК</option>
+                    <option value="CM FBS">CM FBO</option>
+                    <option value="CM FBO">CM FBO</option>
+                    <option value="CK FBS">CK FBS</option>
+                    <option value="CK FBO">CK FBO</option>
+                  </select>
+                </form>
               </th>
               <th>
                 № внутр
