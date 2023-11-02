@@ -1,0 +1,106 @@
+.modal
+  height: 100vh
+  &__header-box
+    width: 100%
+    display: flex
+    border-radius: 16px
+    padding: 4px 15px
+    margin-bottom: 20px
+  &__header
+    display: flex
+    gap: 40px
+    align-items: center
+  &__header-mp
+    font-size: 0.846rem
+    font-weight: 700
+    color: #fff
+  &__header-number
+    font-size: 1.231rem
+    font-weight: 300
+    color: #fff
+  &__modals-box
+    margin-bottom: 20px
+    display: grid
+    grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
+    gap: 20px
+    align-items: start
+  &__table-title
+    font-weight: 600
+    font-size: 1.077rem
+    text-transform: uppercase
+    text-align: start
+    padding-left: 10px
+    padding-bottom: 5px
+  &__table-td-box
+    display: flex
+    justify-content: space-between
+    gap: 5px
+  &__table-row-title
+    display: flex
+    text-align: start
+    font-size: 0.923rem
+    text-transform: none
+    font-weight: 600
+  .table__text
+    justify-content: flex-start
+  &__table-btn
+    border-radius: 16px
+    outline: 0
+    border: 0
+    padding: 5px 6px
+    color: #fff
+    font-size: 0.769rem
+    &--chat
+      border-radius: 0 5px 5px 0
+  &__table-box
+    // width: 100%
+  &__table
+    border-spacing: 0
+    border-collapse: separate
+    tbody
+      border-radius: 5px
+      border: 1px solid #EAEAEA
+      th
+        background: #EAEAEA
+        border-bottom: 1px solid #FFF
+        text-transform: none
+      tr
+        border-radius: 5px
+      td
+        max-width: none
+        border-right: 1px solid #EAEAEA
+        &:last-child
+          border-right: 1px solid #EAEAEA
+      tr:first-child th
+        border-top-left-radius: 5px
+      tr:last-child th
+        border-bottom-left-radius: 5px
+      tr:first-child td
+        border-top-right-radius: 5px
+        border-top: 1px solid #EAEAEA
+      tr:last-child td
+        border-bottom-right-radius: 5px
+    &--chat
+      overflow: auto
+      .table__text-strong
+        justify-content: flex-start
+      td, th
+        padding: 4px 8px
+      td
+        p
+          white-space: normal
+  &__table-chat-box
+    max-height: 170px
+    overflow: auto
+  &__table-chat-form
+    width: 100%
+    display: flex
+    gap: 0
+    padding-top: 2px
+    input
+      width: 100%
+      border-width: 1px
+      border-radius: 5px 0px 0px 5px
+      padding: 4px 8px
+      &:focus-visible
+        outline: 0
