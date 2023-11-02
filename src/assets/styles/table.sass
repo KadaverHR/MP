@@ -50,13 +50,51 @@ $refund: #A6A6AB //Возврат
       align-items: center
       margin: 0 auto
       color: #161B25
+  tr
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      left: 0
+      top: 1px
+      bottom: 1px
+      border-radius: 8px
+      width: 100%
+      pointer-events: none
+      opacity: 0
+      z-index: 1
+      transition: 0.1s opacity ease
+      background-color: #000
+      opacity: 0
+    &:hover 
+      &::before
+        opacity: 0.1
   td
     padding: 6px 10px
     max-width: 140px
     border-bottom: 1px solid #EAEAEA
     border-right: 1px solid #EAEAEA
+    transition: 0.1s outline ease
+    position: relative
     &:last-child
       border-right: 0
+    &::before
+      position: absolute
+      content: ''
+      left: 0
+      top: 1px
+      bottom: 1px
+      border-radius: 8px
+      width: 100%
+      pointer-events: none
+      z-index: 2
+      transition: 0.1s opacity ease
+      background-color: #000
+      opacity: 0
+    &:hover 
+      &::before
+        opacity: .05
+        
   &__mp-box
     margin: 0
     display: flex
