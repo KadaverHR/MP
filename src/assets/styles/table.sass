@@ -16,7 +16,6 @@ $delivered: #BEE3C2// доставлен
 $cancelled: #FFC6C6// отменен
 $refund: #A6A6AB //Возврат
 
-
 .table
   width: 100%
   border-collapse: collapse
@@ -65,7 +64,7 @@ $refund: #A6A6AB //Возврат
       transition: 0.1s opacity ease
       background-color: #000
       opacity: 0
-    &:hover 
+    &:hover
       &::before
         opacity: 0.1
   td
@@ -92,7 +91,7 @@ $refund: #A6A6AB //Возврат
     &:hover
       &::before
         opacity: .05
-        
+
   &__mp-box
     margin: 0
     display: flex
@@ -136,6 +135,13 @@ $refund: #A6A6AB //Возврат
     white-space: nowrap
     &--center
       justify-content: center
+    &--link
+      display: inline-block
+      text-decoration: underline
+      max-width: 110px
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
   &__text-gray
     color: #49505F
     font-size: 0.769rem
@@ -189,7 +195,7 @@ $refund: #A6A6AB //Возврат
     gap: 5px
     align-items: baseline
     justify-items: start
-  &__btn-form 
+  &__btn-form
     display: none
     position: relative
   &__btn-form.active

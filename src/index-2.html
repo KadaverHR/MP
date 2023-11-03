@@ -75,7 +75,7 @@
                   <p class="modal__table-row-title">
                     Статус внутр</p>
                 </th>
-                <td>
+                <td style="background: #FFF3D3;">
                   <p class="table__text">
                     Перемещение
                   </p>
@@ -516,6 +516,7 @@
         <div class="tab">
           <div class="tab__content" id="content-1">
             {% include "includes1.html" %}
+            {% include "includes2.html" %}
           </div>
           <div class="tab__content" id="content-2">
             Содержимое 2... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique eaque iure debitis
@@ -537,11 +538,14 @@
           </div>
           <div class="tab__nav" style="border-color: #3260A3;">
             <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
-            <label class="modal__table-title" style="background: #3260A3;" for="tab-btn-1">Общая информация</label>
+            <label class="modal__table-title" style="background: #3260A3; color: #fff;" for="tab-btn-1">Общая информация</label>
+            
             <input id="tab-btn-2" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-2">Товары и заказы</label>
+            
             <input id="tab-btn-3" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-3">Доставка</label>
+            
             <input id="tab-btn-4" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-4">Документы</label>
           </div>

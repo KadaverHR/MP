@@ -24,6 +24,9 @@
     grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
     gap: 20px
     align-items: start
+    // grid-template-columns: minmax(360px,375px) minmax(260px,300px) 1fr 1fr
+    &--grid1
+      grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
   &__table-title
     font-weight: 600
     font-size: 1.077rem
@@ -52,6 +55,10 @@
     font-size: 0.769rem
     &--chat
       border-radius: 0 5px 5px 0
+    &--cancel
+      color: rgba(211, 49, 49, 0.95)
+      border: 1px solid rgba(211, 49, 49, 0.95)
+      background: transparent
   &__table-box
     // width: 100%
   &__table
@@ -64,6 +71,7 @@
         background: #EAEAEA
         border-bottom: 1px solid #FFF
         text-transform: none
+        padding: 8px
       tr
         border-radius: 5px
       td
@@ -91,9 +99,12 @@
           white-space: normal
     &--wrap
       td, p
-          white-space: normal
+        white-space: normal
+      p.table__text--link
+        text-decoration: none
+
   &__table-chat-box
-    max-height: 170px
+    max-height: 140px
     overflow: auto
   &__table-chat-form
     width: 100%
