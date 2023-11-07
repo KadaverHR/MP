@@ -4,8 +4,26 @@
       white-space: normal
     tr::before, td::before
       display: none
+  &__warehouse
+    display: flex
+    gap: 10px
+    padding-bottom: 20px
+    align-items: center
+  &__table-title
+    padding-bottom: 0
+  &__warehouse-text
+    padding: 3px 10px
+    border-radius: 4px
 
 .products-order
+  &__title-box
+    padding-top: 30px
+    padding-bottom: 10px
+  &__title
+    font-size: 1.077rem
+    font-weight: 500
+    strong
+      font-weight: 700
   &__table
     width: 100%
     border-spacing: 0
@@ -15,3 +33,12 @@
       padding-bottom: 3px
     tr::before, td::before
       display: none
+  .products__table
+    .submenu
+      th
+        padding-top: 0
+        padding-bottom: 3px
+      p
+        font-weight: 400
+      &__top
+        padding: 5px 0 0 0

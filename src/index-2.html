@@ -519,7 +519,23 @@
             {% include "includes2.html" %}
           </div>
           <div class="tab__content" id="content-2">
+
+            <div class="products__warehouse">
+
+
+              <p class="modal__table-title">
+                Склад отправки:
+              </p>
+              <p class="table__text products__warehouse-text" style="background: #EFBA87;">
+                Ростов
+              </p>
+              <button class="modal__table-btn" style="background: #3260A3;">
+                Изменить
+              </button>
+
+            </div>
             {% include "includes2.html" %}
+            {% include "includes3.html" %}
           </div>
           <div class="tab__content" id="content-3">
             Содержимое 3... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique eaque iure debitis
@@ -535,14 +551,15 @@
           </div>
           <div class="tab__nav" style="border-color: #3260A3;">
             <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
-            <label class="modal__table-title" style="background: #3260A3; color: #fff;" for="tab-btn-1">Общая информация</label>
-            
+            <label class="modal__table-title" style="background: #3260A3; color: #fff;" for="tab-btn-1">Общая
+              информация</label>
+
             <input id="tab-btn-2" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-2">Товары и заказы</label>
-            
+
             <input id="tab-btn-3" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-3">Доставка</label>
-            
+
             <input id="tab-btn-4" name="tab-btn" type="radio" value="">
             <label class="modal__table-title" for="tab-btn-4">Документы</label>
           </div>

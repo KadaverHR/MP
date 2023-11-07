@@ -189,6 +189,11 @@ $refund: #A6A6AB //Возврат
     background: rgba(211, 49, 49, 0.95)
     p,span
       color: #fff
+  &__best
+    border-radius: 8px
+    background: #C8DDAE
+  &__ordered
+    
   &__tooltip-box
     display: grid
     grid-template-columns: repeat(2, auto)
@@ -200,6 +205,24 @@ $refund: #A6A6AB //Возврат
     position: relative
   &__btn-form.active
     display: block
+  &__input-box
+    display: flex
+    min-width: 0
+    justify-content: center
+    margin: 0 auto
+  &__input
+    display: flex
+    border: 1px solid
+    border-radius: 4px
+    &:focus-visible
+      outline: 0
+  &__unwrap
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: flex-end
+    button
+      margin: 0 !important
 
 .tooltip
   position: relative
