@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <script defer src="assets/libs/choices.min.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="http://">
+        <img src="assets/img/logo2.png">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="filter">
+      <div class="container">
+        <div id="search" class="search-area">
+          <form class="search">
+            <select class="search__select select-type" style="width: 100%">
+              <option value="1">№ Заказа МП</option>
+              <option value="2">По фамилии</option>
+              <option value="3">По адресу</option>
+              <option value="4">№ внутр.</option>
+              <option value="5">Сумм заказа</option>
+              <option value="6">Артикул</option>
+            </select>
+            <input type="text" class="search__input" value="" placeholder="Поиск">
+            <button class="button search__button" type="submit">
+              <img src="assets/img/search.svg" alt="Найти">
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="all-table">
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                <button id="selectMP" class="table__header-btn">
+                  <img src="assets/img/fltr.svg">МП
+                </button>
+                <form id="selectMPform" class="table__btn-form" action="">
+                  <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button"
+                    placeholder="Выбери меня" multiple>
+
+                    <option value="ОМ">ОМ</option>
+                    <option value="ОК">ОК</option>
+                    <option value="CM FBS">CM FBO</option>
+                    <option value="CM FBO">CM FBO</option>
+                    <option value="CK FBS">CK FBS</option>
+                    <option value="CK FBO">CK FBO</option>
+                  </select>
+                </form>
+              </th>
+              <th>
+                № внутр/<br>
+                № МП
+              </th>
+              <th>
+                Артикул
+              </th>
+              <th>
+                Кол-во
+              </th>
+              <th>
+                ТК
+              </th>
+              <th>
+                Статус ТК
+              </th>
+              <th>
+                Дата ТК/МП
+              </th>
+              <th>
+                Трек
+              </th>
+              <th>
+                Сумма доставки<br>предв./окон.
+              </th>
+              <th>
+                Вес, объем<br>предв./окон.
+              </th>
+              <th>
+                Склад /Метод
+              </th>
+              <th>
+                Адрес
+
+              </th>
+            </tr>
+          </thead>
+
+
+
+          <tbody>
+            <!-- Перемещение-->
+            <tr style="background: #FFF3D3;">
+              <td>
+                <div class="table__mp-box">
+                  <div class="table__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="table__hover">
+                  <a href="" class="table__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+              <td>
+                <label class="tooltip">
+                  <p class="table__text-strong">
+                    S1024045
+                  </p>
+                  <input type="checkbox">
+                  <span>
+                    <div class="table__tooltip-box">
+                      <p class="table__text">
+                        155/65R14 75T Kumho WP52
+                      </p>
+                    </div>
+
+                  </span>
+
+                </label>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  4
+                </p>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  Л-ПОСТ
+                </p>
+              </td>
+              <td>
+                <div class="table__tooltip-box">
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    выдан курьеру
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    вернули на склад
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    отдали курьеру
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div style="align-items: center;" class="table__hover">
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                </div>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  123586843487
+                </p>
+              </td>
+              <td>
+                <div style="align-items: center;;" class="table__hover">
+                  <p class="table__text">
+                    5 963
+                  </p>
+                  <p class="table__text">
+                    4 963
+                  </p>
+
+                </div>
+              </td>
+              <td class="table__danger">
+                <div style="justify-items: center;" class="table__tooltip-box">
+
+                  <p class="table__text">
+                    56
+                  </p>
+                  <p class="table__text">
+                    0.55
+                  </p>
+                  <p style="font-weight: 700;" class="table__text">
+                    77
+                  </p>
+                  <p class="table__text">
+                    1.56
+                  </p>
+                </div>
+              </td>
+
+              <td class="table__warehouse" style="background: #AECCF9 ;">
+                <div class="table__grid">
+                  <p class="table__text">
+                    Ростов-на-Дону
+                  </p>
+                  <p class="table__text-gray">
+                    Самостоятельно
+                  </p>
+                </div>
+              </td>
+              <td>
+                <p style="white-space: normal;" class="table__text">
+                  Кудыкина гора, лысый череп зверушки, дом кукушки, корпус в деревушке, помещение орла, квартира сокола
+                </p>
+              </td>
+
+            </tr>
+
+            <!-- 2 -->
+            <tr style="background: #FFF3D3;">
+              <td>
+                <div class="table__mp-box">
+                  <div class="table__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="table__hover">
+                  <a href="" class="table__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+              <td>
+                <label class="tooltip">
+                  <p class="table__text-strong">
+                    S1024045
+                  </p>
+                  <input type="checkbox">
+                  <span>
+                    <div class="table__tooltip-box">
+                      <p class="table__text">
+                        155/65R14 75T Kumho WP52
+                      </p>
+                    </div>
+
+                  </span>
+
+                </label>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  4
+                </p>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  Л-ПОСТ
+                </p>
+              </td>
+              <td>
+                <div class="table__tooltip-box">
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    выдан курьеру
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    вернули на склад
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text-gray">
+                    отдали курьеру
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div style="align-items: center;" class="table__hover">
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                  <p class="table__text">
+                    20 сент. 19:25
+                  </p>
+                </div>
+              </td>
+              <td>
+                <p class="table__text table__text--center">
+                  123586843487
+                </p>
+              </td>
+              <td>
+                <div style="align-items: center;;" class="table__hover">
+                  <p class="table__text">
+                    5 963
+                  </p>
+                  <p class="table__text">
+                    4 963
+                  </p>
+
+                </div>
+              </td>
+              <td class="table__danger">
+                <div style="justify-items: center;" class="table__tooltip-box">
+
+                  <p class="table__text">
+                    56
+                  </p>
+                  <p class="table__text">
+                    0.55
+                  </p>
+                  <p style="font-weight: 700;" class="table__text">
+                    77
+                  </p>
+                  <p class="table__text">
+                    1.56
+                  </p>
+                </div>
+              </td>
+
+              <td class="table__warehouse" style="background: #AECCF9 ;">
+                <div class="table__grid">
+                  <p class="table__text">
+                    Ростов-на-Дону
+                  </p>
+                  <p class="table__text-gray">
+                    Самостоятельно
+                  </p>
+                </div>
+              </td>
+              <td>
+                <p style="white-space: normal;" class="table__text">
+                  Кудыкина гора, лысый череп зверушки, дом кукушки, корпус в деревушке, помещение орла, квартира сокола
+                </p>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
