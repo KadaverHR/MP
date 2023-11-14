@@ -539,16 +539,47 @@
           </div>
           <div class="tab__content" id="content-3">
 
-            <!-- начало -->
+            <!-- 1. начало -->
             {% include "includes4.html" %}
             {% include "includes5.html" %}
 
-            <!-- после нажатия на кнопку адресного расчета -->
+
+
+            <!-- 2. после нажатия на кнопку
+            адресного расчета -->
+            <p style="width: 100%; background:  #000; margin-bottom: 20px; color: #fff">после нажатия на кнопку
+              адресного расчета</p>
             {% include "includes4.html" %}
             {% include "includes5.html" %}
-            {% include "includes6.html" %}
+
+            <div class="address-delivery">
+              {% include "includes6.html" %}
+            </div>
+
+
+            <!-- 3. после выбора ТК -->
+            <p style="width: 100%; background:  #000; margin-bottom: 20px; color: #fff">после выбора ТК</p>
+
+            {% include "includes4.html" %}
+            {% include "includes5.html" %}
+
+            <div class="address-delivery">
+              {% include "includes7.html" %}
+            </div>
+
 
             
+            <!-- 4. заявка подана -->
+            <p style="width: 100%; background:  #000; margin-bottom: 20px; color: #fff">заявка подана</p>
+
+            {% include "includes4.html" %}
+            {% include "includes5.html" %}
+
+            <div class="address-delivery">
+              {% include "includes7.html" %}
+              {% include "includes8.html" %}
+            </div>
+
           </div>
           <div class="tab__content" id="content-4">
             Содержимое 4... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique eaque iure debitis

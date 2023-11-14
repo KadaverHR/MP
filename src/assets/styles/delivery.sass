@@ -6,7 +6,7 @@
   &__box
     display: grid
     gap: 20px
-    grid-template-columns: 1fr 1fr 3fr  
+    grid-template-columns: 1fr 1fr 3fr
   &__box-pvz
 
   &__box-input
@@ -21,13 +21,13 @@
   &__box-form
     display: flex
     gap: 10px
-    padding-top: 2px
     flex-direction: column
     input
       border-radius: 5px
     button
       border-radius: 5px
       width: max-content
+
   &__radio-box
     display: flex
     align-items: center
@@ -35,6 +35,7 @@
     input
       width: auto
       margin-right: 5px
+      margin-top: 0
   &__radio-wrapper
     display: flex
     gap: 20px
@@ -50,3 +51,76 @@
   &__manually-box .modal__table-btn
     border-radius: 0 5px 5px 0
 
+.address-delivery
+  display: grid
+  margin-top: 20px
+  grid-template-columns: repeat(2,1fr)
+  gap: 20px
+  &__box
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 0
+    border: 1px solid #EAEAEA
+    border-radius: 4px
+  &__box-title
+    display: grid
+    justify-items: center
+    padding-top: 5px
+    padding-bottom: 3px
+    border-bottom: 3px solid #EAEAEA
+  &__box-title.active
+    color: #fff
+    border-radius: 4px 4px 0 0
+  &__block
+    border-right: 1px solid #EAEAEA
+    &--content
+      padding: 20px
+      display: grid
+      align-content: space-between
+    &:nth-child(2n)
+      border-right: none
+  &__title-text
+    font-size: 0.923rem
+    font-weight: 600
+  &__title
+    text-align: center
+    color: #222
+    font-weight: 600
+  &__left-text
+    color: #49505F
+    font-size: 0.923rem
+    font-weight: 400
+    line-height: normal
+  &__price
+    font-size: 0.923rem
+    font-weight: 400
+    line-height: normal
+    color: #222
+    padding: 3px 20px
+  &__price.best
+    background: #C8DDAE
+    border-radius: 4px
+  &__list
+    display: grid
+    grid-template-columns: repeat(2,auto)
+    justify-content: space-between
+    gap: 10px 20px
+  &__button-wrapper
+    margin-top: 20px
+    display: grid
+    gap: 10px
+    .btn
+      padding: 5px 20px
+
+.making-delivery
+  &__box
+    display: grid
+    grid-template-columns: 1fr
+    border-radius: 4px
+    border: 1px solid #EAEAEA
+  &__content
+    padding: 20px
+    display: grid
+    align-content: space-between
+    grid-template-columns: repeat(2,auto)
+    gap: 20px

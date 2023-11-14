@@ -22,11 +22,12 @@
     margin-bottom: 20px
     display: grid
     grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
+    // grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
     gap: 20px
     align-items: start
-    // grid-template-columns: minmax(360px,375px) minmax(260px,300px) 1fr 1fr
     &--grid1
-      grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
+      // grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,360px)
+      grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
     &--delivery
       display: grid
       grid-template-columns: repeat(3, 1fr)
@@ -108,7 +109,9 @@
         white-space: normal
       p.table__text--link
         text-decoration: none
-
+        max-width: 150px
+      a.table__text--link
+        max-width: 150px
   &__table-chat-box
     max-height: 140px
     overflow: auto
