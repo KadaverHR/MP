@@ -2,7 +2,7 @@
   &__table
     p
       white-space: normal
-    tr::before, td::before
+    .tr-layout::before, .td-layout::before
       display: none
   &__warehouse
     display: flex
@@ -28,14 +28,14 @@
     width: 100%
     border-spacing: 0
     border-right: 0
-    th
+    .th-layout
       padding-top: 3px
       padding-bottom: 3px
-    tr::before, td::before
+    .tr-layout::before, .td-layout::before
       display: none
   .products__table
     .submenu
-      th
+      .th-layout
         padding-top: 0
         padding-bottom: 3px
       p

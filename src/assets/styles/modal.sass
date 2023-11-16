@@ -64,7 +64,7 @@
     font-size: 0.923rem
     text-transform: none
     font-weight: 600
-  .table__text
+  .table-layout__text
     justify-content: flex-start
   &__table-btn
     border-radius: 16px
@@ -84,46 +84,46 @@
   &__table
     border-spacing: 0
     border-collapse: separate
-    tbody
+    .tbody-layout
       border-radius: 5px
       border: 1px solid #EAEAEA
-      th
+      .th-layout
         background: #EAEAEA
         border-bottom: 1px solid #FFF
         text-transform: none
         padding: 8px
-      tr
+      .tr-layout
         border-radius: 5px
-      td
+      .td-layout
         max-width: none
         border-right: 1px solid #EAEAEA
         &:last-child
           border-right: 1px solid #EAEAEA
-      tr:first-child th
+      .tr-layout:first-child .th-layout
         border-top-left-radius: 5px
-      tr:last-child th
+      .tr-layout:last-child .th-layout
         border-bottom-left-radius: 5px
-      tr:first-child td
+      .tr-layout:first-child .td-layout
         border-top-right-radius: 5px
         border-top: 1px solid #EAEAEA
-      tr:last-child td
+      .tr-layout:last-child .td-layout
         border-bottom-right-radius: 5px
     &--chat
       overflow: auto
-      .table__text-strong
+      .table-layout__text-strong
         justify-content: flex-start
-      td, th
+      .td-layout, .th-layout
         padding: 4px 8px
-      td
+      .td-layout
         p
           white-space: normal
     &--wrap
-      td, p
+      .td-layout, p
         white-space: normal
-      p.table__text--link
+      p.table-layout__text--link
         text-decoration: none
         max-width: 150px
-      a.table__text--link
+      a.table-layout__text--link
         max-width: 150px
   &__table-chat-box
     max-height: 140px
@@ -132,7 +132,7 @@
     width: 100%
     display: flex
     gap: 0
-    input
+    .input-layout
       width: 100%
       border-width: 1px
       border-radius: 5px 0px 0px 5px
