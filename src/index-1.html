@@ -34,7 +34,7 @@
               <option value="6">Артикул</option>
             </select>
             <input type="text" class="search__input" value="" placeholder="Поиск">
-            <button class="button search__button" type="submit">
+            <button class="search__button" type="submit">
               <img src="assets/img/search.svg" alt="Найти">
             </button>
           </form>
@@ -43,17 +43,16 @@
     </section>
     <section class="all-table">
       <div class="container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>
-                <button id="selectMP" class="table__header-btn">
+        <table class="table-layout">
+          <thead class="thead-layout">
+            <tr class="tr-layout" class="tr-layout">
+              <th class="th-layout">
+                <button id="selectMP" class="table-layout__header-btn">
                   <img src="assets/img/fltr.svg">МП
                 </button>
-                <form id="selectMPform" class="table__btn-form" action="">
+                <form id="selectMPform" class="table-layout__btn-form" action="">
                   <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button"
                     placeholder="Выбери меня" multiple>
-
                     <option value="ОМ">ОМ</option>
                     <option value="ОК">ОК</option>
                     <option value="CM FBS">CM FBO</option>
@@ -63,116 +62,114 @@
                   </select>
                 </form>
               </th>
-              <th>
+              <th class="th-layout">
                 № внутр
               </th>
-              <th>
+              <th class="th-layout">
                 Дата <br> заказа
               </th>
-              <th>
+              <th class="th-layout">
                 Крайние сроки
               </th>
-              <th>
-                <button class="table__header-btn">
+              <th class="th-layout">
+                <button class="table-layout__header-btn">
                   <img src="assets/img/fltr.svg">Статус
                 </button>
               </th>
-              <th>
-                <button class="table__header-btn">
+              <th class="th-layout">
+                <button class="table-layout__header-btn">
                   <img src="assets/img/fltr.svg">Статус МП
                 </button>
               </th>
-              <th>
-                <button class="table__header-btn">
+              <th class="th-layout">
+                <button class="table-layout__header-btn">
                   <img src="assets/img/fltr.svg">Склад/Метод
                 </button>
               </th>
-              <th>
+              <th class="th-layout">
                 Артикул
               </th>
-              <th>
+              <th class="th-layout">
                 Кол-<br>во
               </th>
-              <th>
+              <th class="th-layout">
                 Сумма<br> заказа, <span>₽</span>
               </th>
-              <th>
-                <button class="table__header-btn">
+              <th class="th-layout">
+                <button class="table-layout__header-btn">
                   <img src="assets/img/fltr.svg">ТК
                 </button>
               </th>
-              <th>
+              <th class="th-layout">
                 Сумма<br> доставки, <span>₽</span>
               </th>
-              <th>
+              <th class="th-layout">
                 Маржа, <span>₽/% </span>
               </th>
-              <th>
+              <th class="th-layout">
                 Комментарии
               </th>
-              <th>
+              <th class="th-layout">
                 Вопросы складу
               </th>
             </tr>
           </thead>
 
-
-
           <tbody>
             <!-- 1 Новый-->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
+            <tr class="tr-layout" style="background: #fff;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
                     ОМ
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <a href="" class="table__link">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
                     10240
                   </a>
-                  <p style="text-align: center;" class="table__text-gray">
+                  <p style="text-align: center;" class="table-layout__text-gray">
                     52261074-0021-1
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -181,36 +178,36 @@
                   </div>
                 </label>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Новый
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #AECCF9 ;">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Ростов-на-Дону
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
+              <td class="td-layout">
 
                 <label class="tooltip">
-                  <p class="table__text-strong">
+                  <p class="table-layout__text-strong">
                     S1024045
                   </p>
                   <input type="checkbox">
                   <span>
-                    <div class="table__tooltip-box">
-                      <p class="table__text">
+                    <div class="table-layout__tooltip-box">
+                      <p class="table-layout__text">
                         155/65R14 75T Kumho WP52
                       </p>
                     </div>
@@ -220,13 +217,13 @@
                 </label>
 
                 <label class="tooltip">
-                  <p class="table__text-strong">
+                  <p class="table-layout__text-strong">
                     S1024045
                   </p>
                   <input type="checkbox">
                   <span>
-                    <div class="table__tooltip-box">
-                      <p class="table__text">
+                    <div class="table-layout__tooltip-box">
+                      <p class="table-layout__text">
                         155/65R14 75T Kumho WP52
                       </p>
                     </div>
@@ -236,13 +233,13 @@
                 </label>
 
                 <label class="tooltip">
-                  <p class="table__text-strong">
+                  <p class="table-layout__text-strong">
                     S1024045
                   </p>
                   <input type="checkbox">
                   <span>
-                    <div class="table__tooltip-box">
-                      <p class="table__text">
+                    <div class="table-layout__tooltip-box">
+                      <p class="table-layout__text">
                         155/65R14 75T Kumho WP52
                       </p>
                     </div>
@@ -252,85 +249,85 @@
                 </label>
 
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
-                <p class="table__text table__text--center">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
-                <p class="table__text table__text--center">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
 
-                <div class="table__hover table__text--centerr">
-                  <p class="table__text">
+                <div class="table-layout__hover table-layout__text--centerr">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
 
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     <!-- Предварительно -->
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     <!-- ЛП ПВЗ -->
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   <!-- 2 500 -->
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     <!-- 2 500 -->
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     <!-- 16,9 -->
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <!-- <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <!-- <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div> -->
               </td>
-              <td class="table__questions">
-                <!-- <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <!-- <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -340,59 +337,59 @@
               </td> -->
             </tr>
             <!-- 2 Новый-->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #558EE4;">
+            <tr class="tr-layout" style="background: #fff;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #558EE4;">
                     ОК
                     <span></span>
                   </div>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <a href="" class="table__link">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
                     10240
                   </a>
-                  <p style="text-align: center;" class="table__text-gray">
+                  <p style="text-align: center;" class="table-layout__text-gray">
                     52261074-0021-1
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -401,269 +398,103 @@
                   </div>
                 </label>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Новый
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #EFBA87;">
-                <div class="table__grid">
-                  <p class="table__text">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #EFBA87;">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Климовск
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Л-ПОСТ ПВЗ
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 3 Новый-->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #E99465;">
-                    СМ
-                    <span>FBО</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <a href="" class="table__link">
-                    10240
-                  </a>
-                  <p style="text-align: center;" class="table__text-gray">
-                    52261074-0021-1
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
-                      доставка
-                    </p>
-                    <p class="table__text">
-                      20 сент. 19:25
-                    </p>
-                    <input type="checkbox">
-                    <span>
-                      <div class="table__tooltip-box">
-
-                        <p class="table__text">
-                          20 сент. 19:25
-                        </p>
-                        <p class="table__text-gray">
-                          сборка
-                        </p>
-                        <p class="table__text">
-                          20 сент. 19:25
-                        </p>
-                        <p class="table__text-gray">
-                          отгрузка
-                        </p>
-                        <p class="table__text">
-                          20 сент. 19:25
-                        </p>
-                        <p class="table__text-gray">
-                          доставка
-                        </p>
-                      </div>
-
-                    </span>
-                  </div>
-                </label>
-              </td>
-              <td>
-                <p class="table__text">
-                  Новый
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #9FD18B;">
-                <div class="table__grid">
-                  <p class="table__text">
-                    Набережные Челны
-                  </p>
-                  <p class="table__text-gray">
-                    СДЭК ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
-                    400 868
-                  </p>
-                  <p class="table__text-gray">
-                    доставка 1400
-                  </p>
-                </div>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Сообщили, везем
@@ -672,59 +503,59 @@
               </td>
             </tr>
             <!-- 4  перемещение-->
-            <tr style="background: #FFF3D3;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #A65339;">
+            <tr class="tr-layout" style="background: #FFF3D3;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #A65339;">
                     CM
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <a href="" class="table__link">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
                     10240
                   </a>
-                  <p style="text-align: center;" class="table__text-gray">
+                  <p style="text-align: center;" class="table-layout__text-gray">
                     52261074-0021-1
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -733,104 +564,104 @@
                   </div>
                 </label>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Перемещение
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #8EE0DB;">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #8EE0DB;">
 
-                <div class="table__grid">
-                  <p class="table__text">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Новосибирск
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -840,59 +671,59 @@
               </td>
             </tr>
             <!-- 5 оформление документов-->
-            <tr style="background: #B5E5EF;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #589542;">
+            <tr class="tr-layout" style="background: #B5E5EF;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #589542;">
                     CK
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <a href="" class="table__link">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
                     10240
                   </a>
-                  <p style="text-align: center;" class="table__text-gray">
+                  <p style="text-align: center;" class="table-layout__text-gray">
                     52261074-0021-1
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -901,103 +732,103 @@
                   </div>
                 </label>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Оф.документов
                 </p>
               </td>
-              <td class="table__danger">
-                <p class="table__text ">
+              <td class="td-layout" class="table-layout__danger">
+                <p class="table-layout__text ">
                   Отменен
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #C4B0E0;">
-                <div class="table__grid">
-                  <p class="table__text">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #C4B0E0;">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Орел
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-                        <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -1007,54 +838,54 @@
               </td>
             </tr>
             <!-- 6 перемещение-->
-            <tr style="background: #FFF3D3;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #39A672;">
+            <tr class="tr-layout" style="background: #FFF3D3;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #39A672;">
                     CK
                     <span>FBO</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <a href="" class="table__link">
+              <td class="td-layout">
+                <a href="" class="table-layout__link">
                   10240
                 </a>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td class="table__danger">
+              <td class="td-layout" class="table-layout__danger">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -1063,104 +894,104 @@
                   </div>
                 </label>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Перемещение
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #F4A3A3;">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #F4A3A3;">
 
-                <div class="table__grid">
-                  <p class="table__text">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Санкт-Петербург
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Л-ПОСТ ПВЗ
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-                        <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -1170,54 +1001,54 @@
               </td>
             </tr>
             <!-- 7 в сборке-->
-            <tr style="background: #FCD0A4;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
+            <tr class="tr-layout" style="background: #FCD0A4;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
                     ОМ
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <a href="" class="table__link">
+              <td class="td-layout">
+                <a href="" class="table-layout__link">
                   10240
                 </a>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
+              <td class="td-layout">
                 <label class="tooltip">
-                  <div class="table__hover">
-                    <p class="table__text-gray">
+                  <div class="table-layout__hover">
+                    <p class="table-layout__text-gray">
                       доставка
                     </p>
-                    <p class="table__text">
+                    <p class="table-layout__text">
                       20 сент. 19:25
                     </p>
                     <input type="checkbox">
                     <span>
-                      <div class="table__tooltip-box">
+                      <div class="table-layout__tooltip-box">
 
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           сборка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           отгрузка
                         </p>
-                        <p class="table__text">
+                        <p class="table-layout__text">
                           20 сент. 19:25
                         </p>
-                        <p class="table__text-gray">
+                        <p class="table-layout__text-gray">
                           доставка
                         </p>
                       </div>
@@ -1227,103 +1058,103 @@
                 </label>
 
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #AECCF9 ;">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Ростов-на-Дону Ростов-на-Дону
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-                        <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -1333,133 +1164,133 @@
               </td>
             </tr>
             <!-- 8 отменен-->
-            <tr style="background: #FFC6C6;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #A65339;">
+            <tr class="tr-layout" style="background: #FFC6C6;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #A65339;">
                     CM
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <a href="" class="table__link">
+              <td class="td-layout">
+                <a href="" class="table-layout__link">
                   10240
                 </a>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     сборка
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     20 сент. 19:25
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Отменен
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #AECCF9 ;">
 
-                <div class="table__grid">
-                  <p class="table__text">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Ростов-на-Дону Ростов-на-Дону
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-                        <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     400 868
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     доставка 1400
                   </p>
                 </div>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
 
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -1469,126 +1300,126 @@
               </td>
             </tr>
             <!-- 9 возврат-->
-            <tr style="background: #A6A6AB;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
+            <tr class="tr-layout" style="background: #A6A6AB;">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
                     ОМ
                     <span>FBS</span>
                   </div>
                 </div>
               </td>
-              <td>
-                <a href="" class="table__link">
+              <td class="td-layout">
+                <a href="" class="table-layout__link">
                   10240
                 </a>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   20 сент.
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     сборка
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     20 сент. 19:25
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   Возврат
                 </p>
               </td>
-              <td>
-                <p class="table__text">
+              <td class="td-layout">
+                <p class="table-layout__text">
                   В сборке
                 </p>
               </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
+              <td class="td-layout" class="table-layout__warehouse" style="background: #AECCF9 ;">
+                <div class="table-layout__grid">
+                  <p class="table-layout__text">
                     Ростов-на-Дону Ростов-на-Дону
                   </p>
-                  <p class="table__text-gray">
+                  <p class="table-layout__text-gray">
                     Самостоятельно
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text-strong">
+              <td class="td-layout">
+                <p class="table-layout__text-strong">
                   S1024045
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   4
                 </p>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   400 868
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     Предварительно
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     ЛП ПВЗ
                   </p>
                 </div>
               </td>
-              <td>
-                <p class="table__text table__text--center">
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
                   2 500
                 </p>
               </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text table-layout__text--center">
                     2 500
                   </p>
-                  <p class="table__text table__text--center">
+                  <p class="table-layout__text table-layout__text--center">
                     16,9
                   </p>
                 </div>
               </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
+              <td class="td-layout table-layout__comment">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text-gray">
                     07.10 Капралов
                   </p>
-                  <p class="table__text">
+                  <p class="table-layout__text">
                     Привет! Заказ в работе
                   </p>
                 </div>
               </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
                     Год и страна происхождения
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       СК:
                     </span>
 
                     209820
                   </p>
                 </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
                       МН:
                     </span>
 
@@ -1596,782 +1427,7 @@
                   </p>
                 </div>
               </td>
-            </tr>
-            <!-- 10 -->
-            <tr style="background: #FFF3D3;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #A65339;">
-                    CM
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Перемещение
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
 
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 11 -->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
-                    ОМ
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Новый
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 12 -->
-            <tr style="background: #FFF3D3;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #A65339;">
-                    CM
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Перемещение
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 13 -->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
-                    ОМ
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Новый
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 14 -->
-            <tr style="background: #FFF3D3;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #A65339;">
-                    CM
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Перемещение
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <!-- 15 -->
-            <tr style="background: #fff;">
-              <td>
-                <div class="table__mp-box">
-                  <div class="table__mp" style="background: #3260A3;">
-                    ОМ
-                    <span>FBS</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href="" class="table__link">
-                  10240
-                </a>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  20 сент.
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    сборка
-                  </p>
-                  <p class="table__text">
-                    20 сент. 19:25
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text">
-                  Новый
-                </p>
-              </td>
-              <td>
-                <p class="table__text">
-                  В сборке
-                </p>
-              </td>
-              <td class="table__warehouse" style="background: #AECCF9 ;">
-                <div class="table__grid">
-                  <p class="table__text">
-                    Ростов-на-Дону Ростов-на-Дону
-                  </p>
-                  <p class="table__text-gray">
-                    Самостоятельно
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text-strong">
-                  S1024045
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  4
-                </p>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  400 868
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    Предварительно
-                  </p>
-                  <p class="table__text">
-                    ЛП ПВЗ
-                  </p>
-                </div>
-              </td>
-              <td>
-                <p class="table__text table__text--center">
-                  2 500
-                </p>
-              </td>
-              <td>
-                <div class="table__hover">
-                  <p class="table__text table__text--center">
-                    2 500
-                  </p>
-                  <p class="table__text table__text--center">
-                    16,9
-                  </p>
-                </div>
-              </td>
-              <td class="table__comment">
-                <div class="table__hover">
-                  <p class="table__text-gray">
-                    07.10 Капралов
-                  </p>
-                  <p class="table__text">
-                    Привет! Заказ в работе
-                  </p>
-                </div>
-              </td>
-              <td class="table__questions">
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Год и страна происхождения
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      СК:
-                    </span>
-                    209820
-                  </p>
-                </div>
-                <div class="table__hover">
-                  <p class="table__text">
-                    <span class="table__text-gray">
-                      МН:
-                    </span>
-                    Сообщили, везем
-                  </p>
-                </div>
-              </td>
-            </tr>
           </tbody>
         </table>
       </div>

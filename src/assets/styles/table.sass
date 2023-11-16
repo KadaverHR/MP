@@ -16,11 +16,11 @@ $delivered: #BEE3C2// доставлен
 $cancelled: #FFC6C6// отменен
 $refund: #A6A6AB //Возврат
 
-.table
+.table-layout
   width: 100%
   border-collapse: collapse
   border-right: 1px solid #fff
-  th
+  .th-layout
     padding: 12px 10px
     font-size: 0.769rem
     font-weight: 600
@@ -30,8 +30,7 @@ $refund: #A6A6AB //Возврат
     text-align: center
     &:last-child
       border-right: 0
-
-  thead
+  .thead-layout
     background: #EAEAEA
     button
       outline: 0
@@ -49,7 +48,7 @@ $refund: #A6A6AB //Возврат
       align-items: center
       margin: 0 auto
       color: #222
-  tr
+  .tr-layout
     position: relative
     &::before
       position: absolute
@@ -67,7 +66,7 @@ $refund: #A6A6AB //Возврат
     &:hover
       &::before
         opacity: 0.1
-  td
+  .td-layout
     padding: 6px 10px
     max-width: 140px
     border-bottom: 1px solid #EAEAEA
@@ -97,7 +96,7 @@ $refund: #A6A6AB //Возврат
     display: flex
     justify-content: center
     align-items: center
-  .table__mp
+  &__mp
     color: #FFF
     font-size: 11px
     font-weight: 700
@@ -105,8 +104,6 @@ $refund: #A6A6AB //Возврат
     width: 35px
     height: 35px
     border-radius: 100%
-    // border: 1px solid #fff
-    // outline: 1px solid #B6C0D8
     display: flex
     justify-content: center
     align-items: center
@@ -170,8 +167,8 @@ $refund: #A6A6AB //Возврат
     display: flex
     justify-content: center
     align-items: center
-  &__comment
-    p
+  &__comment, &__questions
+    .table-layout__text, .table-layout__text-gray
       font-size: 0.769rem
       line-height: 0.846rem
       white-space: wrap
