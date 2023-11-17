@@ -34,12 +34,11 @@
   &__modals-box
     margin-bottom: 20px
     display: grid
-    grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
-    // grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
+    // grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
+    grid-template-columns: minmax(360px,1fr) minmax(260px,1fr) minmax(260px,1fr) minmax(260px,1fr)
     gap: 20px
     align-items: start
     &--grid1
-      // grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,360px)
       grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
     &--delivery
       display: grid

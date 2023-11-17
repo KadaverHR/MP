@@ -126,3 +126,29 @@ a
 ::-webkit-scrollbar-thumb
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
   border-radius: 5px
+
+.document
+  &__box
+    padding-top: 20px
+  &__form
+    display: flex
+    .input-layout
+      width: auto
+    .input-layout__file[type=file]
+      padding: 4px 8px
+      border-radius: 0
+      border: 1px solid #555
+      height: 33px
+    .input-layout__file[type=file]::file-selector-button
+      border: none
+      background: url(/assets/img/file.svg)
+      background-repeat: no-repeat
+      background-position: center
+      width: 20px
+      height: 20px
+      padding: 4px 8px
+      color: transparent
+      cursor: pointer
+
+    // input[type=file]::file-selector-button:hover
+    //   background: #0d45a5
