@@ -34,12 +34,11 @@
   &__modals-box
     margin-bottom: 20px
     display: grid
-    grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
-    // grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
+    // grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,300px)
+    grid-template-columns: minmax(360px,1fr) minmax(260px,1fr) minmax(260px,1fr) minmax(260px,1fr)
     gap: 20px
     align-items: start
     &--grid1
-      // grid-template-columns: minmax(360px,375px) minmax(260px,300px) minmax(260px,300px) minmax(260px,360px)
       grid-template-columns: repeat(auto-fit, (minmax(260px,1fr)))
     &--delivery
       display: grid
@@ -144,3 +143,21 @@
     border-radius: 4px
     border: 1px solid #EAEAEA
     padding: 10px
+
+.modal-page
+  background: #fff
+  padding: 20px
+  border-radius: 5px
+  min-width: 860px
+  &__address-box
+    padding: 10px 0
+  &__address
+    font-size: 1.1rem
+    font-weight: 400
+    text-align: center
+  &__map-box
+    width: 100%
+    height: 500px
+    margin-bottom: 20px
+  .address-delivery__box
+    grid-template-columns: 1fr
