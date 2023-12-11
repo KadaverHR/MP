@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <script defer src="assets/libs/choices.min.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="http://">
+        <img src="assets/img/logo2.png">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="filter">
+      <div class="container">
+        <div id="search" class="search-area">
+          <!-- <form class="search">
+            <select class="search__select select-type" style="width: 100%">
+              <option value="1">№ Заказа МП</option>
+              <option value="2">По фамилии</option>
+              <option value="3">По адресу</option>
+              <option value="4">№ внутр.</option>
+              <option value="5">Сумм заказа</option>
+              <option value="6">Артикул</option>
+            </select>
+            <input type="text" class="search__input" value="" placeholder="Поиск">
+            <button class="button search__button" type="submit">
+              <img src="assets/img/search.svg" alt="Найти">
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </section>
+    <section class="all-table">
+      <div class="container">
+        <table class="table-layout table-layout__warehouseman">
+          <thead class="thead-layout">
+            <tr class="tr-layout">
+              <th class="th-layout">
+                <button id="selectMP" class="table-layout__header-btn">
+                  <img src="assets/img/fltr.svg">МП
+                </button>
+                <form id="selectMPform" class="table-layout__btn-form" action="">
+                  <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button"
+                    placeholder="Выбери меня" multiple>
+
+                    <option value="ОМ">ОМ</option>
+                    <option value="ОК">ОК</option>
+                    <option value="CM FBS">CM FBO</option>
+                    <option value="CM FBO">CM FBO</option>
+                    <option value="CK FBS">CK FBS</option>
+                    <option value="CK FBO">CK FBO</option>
+                  </select>
+                </form>
+              </th>
+              <th class="th-layout">
+                № внутр/<br>
+                № МП
+              </th>
+              <th class="th-layout">
+                № поставщика
+              </th>
+              <th class="th-layout">
+                Поставщик
+              </th>
+              <th class="th-layout">
+                Дата
+              </th>
+              <th class="th-layout">
+                Наименование
+              </th>
+              <th class="th-layout">
+                Кол-во
+              </th>
+              <th class="th-layout">
+                Статус
+              </th>
+              <th class="th-layout">
+                Вопросы складу
+              </th>
+              <!-- <th class="th-layout">
+                Документы
+              </th> -->
+              <th class="th-layout">
+                Интерфейс
+              </th>
+            </tr>
+          </thead>
+
+
+
+          <tbody class="tbody-layout">
+            <!-- Новый-->
+            <tr class="tr-layout" style="background: #fff">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Новый
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+
+              </td>
+              <!-- <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+                <form class="table-layout__warehouseman-interface">
+                  <p style="display: none;" class="table-layout__text">
+                    Принято 4 из 4
+                  </p>
+                  <button style="background:#589542; border-color: #589542"
+                    class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542; border-color: #589542;"
+                      class="modal__table-btn modal__table-btn--chat" type="submit">Частично</button>
+                  </div>
+                  <button style="background-color: #565C6B;" class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+            <!-- Новый-->
+            <tr class="tr-layout" style="background: #fff">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Новый
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+
+              </td>
+              <!-- <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                    <div class="table-layout__doc-box">
+                      <p class="table-layout__text table-layout__text-gray">
+                        реализация
+                      </p>
+                      <a href="" download="" class="table-layout__text table-layout__text--link">
+                        403.pdf403.pdf403.pdf403.pdf
+                      </a>
+                      <p class="table-layout__text table-layout__text-gray">
+                        марки
+                      </p>
+                      <a href="" download="" class="table-layout__text table-layout__text--link">
+                        403.pdf
+                      </a>
+                      <p class="table-layout__text table-layout__text-gray">
+                        реализация
+                      </p>
+                      <a href="" download="" class="table-layout__text table-layout__text--link">
+                        403.pdf
+                      </a>
+                      <p class="table-layout__text table-layout__text-gray">
+                        какая-то фигня
+                      </p>
+                      <a href="" download="" class="table-layout__text table-layout__text--link">
+                        403.pdf403.pdf403.pdf403.pdf
+                      </a>
+                    </div>
+                  </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td table-layout__danger"
+                style="max-width: none;">
+
+
+
+                <form class="table-layout__warehouseman-interface">
+                  <p class="table-layout__text">
+                    Не принимать!
+                  </p>
+                  <button style="display: none; background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div style="display: none;" class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style="display: none; background-color: #565C6B;"
+                    class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+            <!-- Получен-->
+            <tr class="tr-layout" style="background: #BEE3C2">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Получен
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <!-- <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+
+                <form class="table-layout__warehouseman-interface">
+                  <p class="table-layout__text">
+                    Принято 2 из 4
+                  </p>
+                  <button style="display: none; background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style=" background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div style="display: none;" class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style=" display: none; background-color: #565C6B;"
+                    class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+            <!-- Готов к отгрузке-->
+            <!-- <tr class="tr-layout" style="background: #B5E5EF">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Готов к отгрузке
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td>
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+
+                <form class="table-layout__warehouseman-interface">
+                  <p class="table-layout__text">
+                    Принято 4 из 4
+                  </p>
+                  <button style="display: none; background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style=" background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div style="display: none;" class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style=" display: none; background-color: #565C6B;"
+                    class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr> -->
+
+            <!-- Отгружен-->
+            <!-- <tr class="tr-layout" style="background: #B2D1ED">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Отгружен
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td>
+
+              <td class="td-layout table-layout__warehouseman-interface-td table-layout__danger"
+                style="max-width: none;">
+
+               
+
+                <form class="table-layout__warehouseman-interface">
+                  <p class="table-layout__text">
+                    Не принимать!
+                  </p>
+                  <button style="display: none; background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div style="display: none;" class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style="display: none; background-color: #565C6B;" class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr> -->
+
+            <!-- Возврат-->
+            <tr class="tr-layout" style="background: #A6A6AB">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Возврат
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <!-- <td class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+                <form class="table-layout__warehouseman-interface">
+
+                  <button style="background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style="background-color: #565C6B;" class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+            <!-- Отменен-->
+            <tr class="tr-layout" style="background: #FFC6C6">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Отменен
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <!-- <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+
+
+
+                <form class="table-layout__warehouseman-interface">
+                  <p style="white-space: normal; max-width: 200px;" class="table-layout__text">
+                    Тут сразу будет написана причина отмены
+                  </p>
+                  <button style="display: none; background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="display: none; background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div style="display: none;" class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style="display: none; background-color: #565C6B;"
+                    class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+            <!-- Виртуально-->
+            <tr class="tr-layout" style="background: #A08ABD">
+              <td class="td-layout">
+                <div class="table-layout__mp-box">
+                  <div class="table-layout__mp" style="background: #3260A3;">
+                    ОМ
+                    <span>FBS</span>
+                  </div>
+                </div>
+              </td>
+              <td class="td-layout">
+                <div class="table-layout__hover">
+                  <a href="" class="table-layout__link">
+                    10240
+                  </a>
+                  <p style="text-align: center;" class="table-layout__text-gray">
+                    52261074-0021-1
+                  </p>
+                </div>
+              </td>
+
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  F9807317 крс
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Л-Пост
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  28 окт.
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  155/65R14 75T Kumho WP52
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  4
+                </p>
+              </td>
+              <td class="td-layout">
+                <p class="table-layout__text table-layout__text--center">
+                  Виртуально
+                </p>
+              </td>
+              <td class="td-layout table-layout__questions">
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+                    Год и страна происхождения
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      СК:
+                    </span>
+
+                    209820
+                  </p>
+                </div>
+                <div class="table-layout__hover">
+                  <p class="table-layout__text">
+                    <span class="table-layout__text-gray">
+                      МН:
+                    </span>
+
+                    Сообщили, везем
+                  </p>
+                </div>
+              </td>
+              <!-- <td style="max-width: 200px;" class="td-layout table-layout__questions">
+                <div class="table-layout__doc-box">
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    марки
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    реализация
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf
+                  </a>
+                  <p class="table-layout__text table-layout__text-gray">
+                    какая-то фигня
+                  </p>
+                  <a href="" download="" class="table-layout__text table-layout__text--link">
+                    403.pdf403.pdf403.pdf403.pdf
+                  </a>
+                </div>
+              </td> -->
+
+              <td class="td-layout table-layout__warehouseman-interface-td" style="max-width: none;">
+                <form class="table-layout__warehouseman-interface">
+
+                  <button style="background:#589542;" class="button table-layout__warehouseman-btn">
+                    Принять все
+                  </button>
+
+                  <button style="background-color: rgba(211, 49, 49, 0.95);"
+                    class="button table-layout__warehouseman-btn">
+                    Отменить
+                  </button>
+                  <div class="table-layout__warehouseman-input">
+                    <input class="input-layout" type="number" style="border-color:#589542; ">
+                    <button style="background:#589542;" class="modal__table-btn modal__table-btn--chat"
+                      type="submit">Частично</button>
+                  </div>
+                  <button style="background-color: #565C6B;" class="button table-layout__warehouseman-btn">
+                    Не принимать
+                  </button>
+
+                </form>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
